@@ -128,25 +128,3 @@ For major changes, please open an issue first to discuss your proposal.
 MIT License
 
 ---
-
-# **requirements.txt**
-
-```txt
-streamlit
-fastapi
-uvicorn
-langchain
-langchain-community
-langgraph
-ollama
-pydantic
-python-docx
-pdfplumber
-pypdf
-sentence-transformers
-numpy
-pandas
-scikit-learn
-tqdm
-requests
-python-multipart
