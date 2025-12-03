@@ -52,15 +52,30 @@ Resume & Job Embeddings → Semantic Matching → Ranking + Explanation
 ```
 project/
 │
-├── notebooks/
-│ └── smart_resume_matcher.ipynb
 ├── app/
 │ ├── streamlit_app.py
 │ ├── api.py # FastAPI backend
 │ ├── parsers.py
 │ ├── embeddings.py
 │ ├── match_engine.py
-│ └── graph.py # LangGraph workflow
+│ └── graph.py # LangGraph agent flow
+│
+├── agents/               # only if we build agentic workflows
+│ ├── resume_agent.py
+│ ├── job_matching_agent.py
+│
+├── ingestion/
+│ ├── resume_loader.py # PDF/DOCX parsing
+│ ├── job_loader.py # ingest job descriptions
+│ ├── preprocess.py # normalize, clean text and convert raw text into structured schema
+│
+├── ui/                   # reusable UI components
+│ ├── components.py
+│ └── style.css
+|
+├── notebooks/            # experiments
+│ └── smart_resume_matcher.ipynb
+│ └── demo.ipynb
 │
 ├── data/
 │ ├── resumes/
@@ -118,13 +133,8 @@ uvicorn app.api:app --reload --port 8000
 - Fine-tuned domain-specific embedding models  
 - Support for additional file formats  
 
-### 🤝 Contributing
+### 🤝 Contributors
 
-Pull requests are welcome!  
-For major changes, please open an issue first to discuss your proposal.
-
-### 📜 License
-
-MIT License
+- Sébastien LEVESQUE 
 
 ---
