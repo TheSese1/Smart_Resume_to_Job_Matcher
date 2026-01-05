@@ -65,8 +65,6 @@ project/
 │ ├── job_matching_agent.py
 │
 ├── ingestion/
-│ ├── resume_loader.py # PDF/DOCX parsing
-│ ├── job_loader.py # ingest job descriptions
 │ ├── preprocess.py # normalize, clean text and convert raw text into structured schema
 │
 ├── ui/                   # reusable UI components
@@ -87,6 +85,16 @@ project/
 
 ### ▶️ How to Run
 
+#### **0. Clone the project**
+```
+git clone https://github.com/TheSese1/Smart_Resume_to_Job_Matcher.git
+cd Smart_Resume_to_Job_Matcher
+
+# Create a python environment with correct dependencies (optional)
+python -m venv .venv		
+source .venv/bin/activate   # or Windows equivalent
+```
+
 #### **1. Install Dependencies**
 ```
 pip install -r requirements.txt
@@ -95,9 +103,9 @@ pip install -r requirements.txt
 #### **2. Make sure Ollama is installed**
 Download Ollama from: https://ollama.com  
 Start the Ollama service:
-``` ollama serve ```
+``` ollama serve ``` or open ollama application
 
-Pull your desired model:
+Pull your desired llm and embedding (actually done inside the notebook):
 ```
 ollama pull llama3
 ollama pull nomic-embed-text
