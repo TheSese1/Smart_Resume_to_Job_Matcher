@@ -1,4 +1,4 @@
-# Smart Resume & Job Matcher
+# Smart Resume & Job Matcher (il faudra le remettre à jour, ce n'est que la V2)
 
 An AI-powered Resume and Job Matching application built in **Jupyter Notebook** and deployed through a **Streamlit** interface. The system leverages **Ollama**, **LangChain**, **LangGraph**, and **FastAPI** to enable semantic resume parsing, job-description analysis, and intelligent candidate–job matching.
 
@@ -52,7 +52,7 @@ Resume & Job Embeddings → Semantic Matching → Ranking + Explanation
 ```
 project/
 │
-├── app/
+├── app/# not created yet
 │ ├── streamlit_app.py
 │ ├── api.py # FastAPI backend
 │ ├── parsers.py
@@ -60,24 +60,35 @@ project/
 │ ├── match_engine.py
 │ └── graph.py # LangGraph agent flow
 │
-├── agents/               # only if we build agentic workflows
-│ ├── resume_agent.py
-│ ├── job_matching_agent.py
+├── agents/
+│ ├── normalization_agent.py # agentic functions to create normalized prompts
+│ ├── job_matching_agent.py # not created yet
 │
 ├── ingestion/
 │ ├── preprocess.py # normalize, clean text and convert raw text into structured schema
 │
-├── ui/                   # reusable UI components
+├── embeddings/
+│ ├── embedding_engine.py # Building and using embedding prompts
+│ ├── embedding_format_conversion.py # Converting embedding results into ranking agent input format
+│
+├── match_engine_and_explanation/
+│ ├── match_engine.py # Generating matching scores resume-job
+│ ├── llm_explanation.py # Explanation prompt for matching
+│
+├── ui/# not created yet                   # reusable UI components
 │ ├── components.py
 │ └── style.css
 |
 ├── notebooks/            # experiments
-│ └── smart_resume_matcher.ipynb
-│ └── demo.ipynb
+│ ├── smart_resume_matcher.ipynb  # Main 
+│ ├── checkpoints           # Temporary checkpoints with transformed data at each step
+│ └── demo.ipynb        # not created yet
 │
 ├── data/
 │ ├── resumes/
-│ └── jobs/
+│ │ └── resumes.csv
+│ ├── jobs/
+│ │ └── job_postings.csv
 │
 ├── README.md
 └── requirements.txt

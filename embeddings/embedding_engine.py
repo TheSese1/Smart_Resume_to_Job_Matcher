@@ -5,21 +5,21 @@ embeddings_model = OllamaEmbeddings(
     model="nomic-embed-text"
 )
 
-# Build the Resume embedding 
+# Build the Resume embedding -> sorting the lists helps the model with consistency
 def build_resume_embedding_text(normalized_resume: Dict[str, Any]) -> str:
     return (
-        f"Skills: {', '.join(normalized_resume.get('skills', []))}\n"
-        f"Experience: {', '.join(normalized_resume.get('experience', []))}\n"
-        f"Education: {', '.join(normalized_resume.get('education', []))}\n"
-        f"Certifications: {', '.join(normalized_resume.get('certifications', []))}\n"
-        f"Industries: {', '.join(normalized_resume.get('industries', []))}"
+        f"Skills: {', '.join(sorted(set(normalized_resume.get('skills', []))))}\n"
+        f"Experience: {', '.join(sorted(set(normalized_resume.get('experience', []))))}\n"
+        f"Education: {', '.join(sorted(set(normalized_resume.get('education', []))))}\n"
+        f"Certifications: {', '.join(sorted(set(normalized_resume.get('certifications', []))))}\n"
+        f"Industries: {', '.join(sorted(set(normalized_resume.get('industries', []))))}"
     )
 
 # Build the Job embedding
 def build_job_embedding_text(normalized_job: Dict[str, Any]) -> str:
     return (
         f"Job title: {normalized_job.get('job_title', '')}\n"
-        f"Required skills: {', '.join(normalized_job.get('required_skills', []))}\n"
+        f"Required skills: {', '.join(sorted(set(normalized_job.get('required_skills', []))))}\n"
         f"Required experience: {normalized_job.get('required_experience', '')}\n"
         f"Required education: {normalized_job.get('required_education', '')}\n"
         f"Industry: {normalized_job.get('industry', '')}"
