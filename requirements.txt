@@ -16,6 +16,8 @@ ollama>=0.1.6
 numpy>=1.24
 scikit-learn>=1.3.0
 faiss-cpu>=1.7.4
+transformers>=4.35.0
+torch>=2.1.0
 
 # API
 python-multipart>=0.0.6
