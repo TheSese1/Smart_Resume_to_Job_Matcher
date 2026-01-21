@@ -1,16 +1,8 @@
 import pandas as pd
 import re
 from pathlib import Path
-
-# ----------------------
-# Helper function to clean text
-# ----------------------
-def clean_text(text):
-    if not isinstance(text, str):
-        return ""
-    # Remove excessive whitespace and line breaks
-    text = re.sub(r"\s+", " ", text)
-    return text.strip()
+from docx import Document
+from pypdf import PdfReader
 
 # ----------------------
 # Load Resumes CSV
@@ -29,6 +21,40 @@ def resumes_to_raw_text(csv_path: str):
             "resume_id": idx + 1,
             "text": combined_text,
         })
+    return raw_texts
+
+# We rewrite the function for file uploading
+def any_resume_to_raw_text(path: str):
+    """
+    Convert a list of PDF/DOCX/TXT files into raw text strings.
+    
+    Parameters
+    ----------
+    path : Path or str
+        List of file paths
+    
+    Returns
+    -------
+    List[str]
+        List of raw extracted text, one per file
+    """
+    raw_texts = []
+
+    path = Path(path)
+    ext = path.suffix.lower()
+
+    if ext == ".pdf":
+        text = _extract_pdf(path)
+    elif ext == ".docx":
+        text = _extract_docx(path)
+    elif ext == ".txt":
+        text = _extract_txt(path)
+    else:
+        raise ValueError(f"Unsupported file format: {ext}")
+
+    text = clean_text(text)
+    raw_texts.append(text)
+
     return raw_texts
 
 # ----------------------
@@ -57,3 +83,47 @@ def jobs_to_raw_text(csv_path):
             "text": combined_text,
         })
     return raw_texts
+
+
+def any_job_to_raw_text(path):
+    """
+    Convert a list of PDF/DOCX/TXT files into raw text strings.
+    
+    Parameters
+    ----------
+    path : Path or str
+        List of file paths
+    
+    Returns
+    -------
+    List[str]
+        List of raw extracted text, one per file
+    """
+    return any_resume_to_raw_text(path)
+
+
+# ----------------------
+# Helper functions
+# ----------------------
+def _extract_pdf(path: Path) -> str:
+    reader = PdfReader(str(path))
+    text = ""
+    for page in reader.pages:
+        extracted = page.extract_text() or ""
+        text += extracted + "\n"
+    return text
+
+def _extract_docx(path: Path) -> str:
+    doc = Document(path)
+    text = "\n".join([para.text for para in doc.paragraphs])
+    return text
+
+def _extract_txt(path: Path) -> str:
+    with open(path, "r", encoding="utf-8", errors="ignore") as f:
+        return f.read()
+
+def clean_text(text: str) -> str:
+    # remove control chars and normalize whitespace
+    text = re.sub(r"\s+", " ", text)
+    text = text.strip()
+    return text

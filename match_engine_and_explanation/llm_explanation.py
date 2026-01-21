@@ -1,4 +1,5 @@
 from langchain_community.llms import Ollama
+from typing import Dict, Any
 
 # Initialize Ollama LLM
 llm = Ollama(
@@ -17,13 +18,14 @@ You are an AI recruitment assistant.
 
 Explain why the following resume is a good or poor match for the job.
 Be concise, factual, and explicit.
+Similarity scores go from 0 to 1, 1 being the best.
 
 Job description:
-- Job title: {.join(job_description.get('job_title', []))}
-- Skills: {', '.join(job_description.get('required_skills', []))}
-- Experience: {job_description.get('required_experience', '')}
-- Education: {job_description.get('required_education', '')}
-- Industry: {job_description.get('industry', '')}
+ Job title: {', '.join(job_description.get('job_title', []))}
+ Skills: {', '.join(job_description.get('required_skills', []))}
+ Experience: {job_description.get('required_experience', '')}
+ Education: {job_description.get('required_education', '')}
+ Industry: {job_description.get('industry', '')}
 
 Candidate profile:
 - Skills: {', '.join(normalized_resume.get('skills', []))}
