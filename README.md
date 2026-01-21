@@ -1,6 +1,6 @@
-# Smart Resume & Job Matcher (il faudra le remettre à jour, ce n'est que la V2)
+# Smart Resume & Job Matcher
 
-An AI-powered Resume and Job Matching application built in **Jupyter Notebook** and deployed through a **Streamlit** interface. The system leverages **Ollama**, **LangChain**, **LangGraph**, and **FastAPI** to enable semantic resume parsing, job-description analysis, and intelligent candidate–job matching.
+An AI-powered Resume and Job Matching application built in **Jupyter Notebook** and deployed through a **Streamlit** interface. The system leverages **Ollama** and **Streamlit** to enable semantic resume parsing, job-description analysis, and intelligent candidate–job matching.
 
 ## 🚀 Project Overview
 
@@ -11,40 +11,44 @@ This project goes beyond simple keyword search by using **embeddings**, **semant
 
 - **Resume Parsing**  
   - Supports **PDF**, **DOCX**, and **TXT** files  
-  - Extracts structured fields: *skills, experience, education, certifications, interests*
+  - Extracts structured fields: *skills, experience, education, certifications and industries*
+  - Initial training being done via strings in a csv file
 
-- **Job Description Processing**  
-  - Upload job description files or fetch descriptions from online sources  
-  - Converts job requirements into structured representation
+- **Job Description & Resume Ingestion**  
+  - Uploads job description files or a resume  
+  - Converts job description and resume to rax text
+
+- **Extraction & normalization**  
+  - Extracts the main information from a resume or job description via llama3
+  - Normalizes the resume thanks to predefined function to fix LLM mistakes
 
 - **Semantic Embedding & Matching**  
-  - Uses **Ollama embeddings** (or alternative embedding models)  
+  - Uses **Ollama embeddings** (Nomic or BGE)  
+  - Predefines texts for future embedding
   - Generates vector embeddings for both resumes and job descriptions  
-  - Computes **semantic similarity scores**  
+
+- **Similarity & Ranking**
+  - Computes **semantic similarity scores** (Cosine similarity or Euclidian Distance)
   - Ranks job matches based on contextual relevance
 
 - **Explainable AI Reasoning**  
-  - Generates natural-language explanations for why a resume matches a job  
+  - Generates **natural-language explanations** for why a resume matches a job, showing key stranghts and gaps
   - Example:  
     > “This candidate’s experience in data analytics aligns with the Python and SQL requirements of this role.”
 
 - **Streamlit Application**  
   - Intuitive UI for uploading resumes and job descriptions  
-  - Displays match scores and explanations  
-  - Interactive exploration of structured resume and job data
-
-- **FastAPI Backend (Optional)**  
-  - Serves embedding endpoints  
-  - Powers job-resume matching as an API for future scalability
+  - Options to choose embedding or similarity score
+  - Displays match scores and explanations
 
 ### 🏗️ Architecture
 
 ```
-User → Streamlit UI → (FastAPI backend) → LangChain + LangGraph pipeline
+User → Streamlit UI → (FastAPI backend) → Agentic workflow
 ↓
 Ollama Models (LLM + embeddings)
 ↓
-Resume & Job Embeddings → Semantic Matching → Ranking + Explanation
+Resume & Job Embeddings → Matching → Ranking + Explanation
 ```
 
 ### 📁 Project Structure
@@ -53,42 +57,33 @@ Resume & Job Embeddings → Semantic Matching → Ranking + Explanation
 project/
 │
 ├── app/# not created yet
-│ ├── streamlit_app.py
-│ ├── api.py # FastAPI backend
-│ ├── parsers.py
-│ ├── embeddings.py
-│ ├── match_engine.py
-│ └── graph.py # LangGraph agent flow
+│ └── streamlit_app.py
 │
 ├── agents/
-│ ├── normalization_agent.py # agentic functions to create normalized prompts
-│ ├── job_matching_agent.py # not created yet
+│ ├── normalization_agent.py           # agentic functions to create normalized prompts
+│ └── fixing_agent.py                  # fiwes LLM output to fit a correct JSON schema
 │
 ├── ingestion/
-│ ├── preprocess.py # normalize, clean text and convert raw text into structured schema
+│ └── preprocess.py                    # normalize, clean text and convert raw text into structured schema
 │
 ├── embeddings/
-│ ├── embedding_engine.py # Building and using embedding prompts
-│ ├── embedding_format_conversion.py # Converting embedding results into ranking agent input format
+│ ├── embedding_engine.py              # Building and using embedding prompts
+│ └── embedding_format_conversion.py   # Converting embedding results into ranking agent input format
 │
 ├── match_engine_and_explanation/
-│ ├── match_engine.py # Generating matching scores resume-job
-│ ├── llm_explanation.py # Explanation prompt for matching
-│
-├── ui/# not created yet                   # reusable UI components
-│ ├── components.py
-│ └── style.css
+│ ├── match_engine.py                  # Generating matching scores resume-job
+│ └── llm_explanation.py               # Explanation prompt for matching
 |
-├── notebooks/            # experiments
-│ ├── smart_resume_matcher.ipynb  # Main 
-│ ├── checkpoints           # Temporary checkpoints with transformed data at each step
-│ └── demo.ipynb        # not created yet
+├── notebooks/                         # experiments
+│ ├── smart_resume_matcher.ipynb       # Main notebook for transformation
+│ └── eval.ipynb                       # evaluation notebook
 │
 ├── data/
 │ ├── resumes/
-│ │ └── resumes.csv
+│ │ └── resumes.csv                    # resume texts for training
 │ ├── jobs/
-│ │ └── job_postings.csv
+│ │ └── job_postings.csv               # job posting information for training
+│ └── test/                            # resume and job posting examples (txt, docx, csv)
 │
 ├── README.md
 └── requirements.txt
@@ -127,30 +122,22 @@ ollama pull nomic-embed-text
 streamlit run app/streamlit_app.py
 ```
 
-#### **4. (Optional) Run FastAPI backend**
-```
-uvicorn app.api:app --reload --port 8000
-```
-
 ### 🧠 Technologies Used
 
 | Technology | Purpose |
 |-----------|---------|
 | **Streamlit** | Front-end UI |
-| **FastAPI** | Backend API for model inference |
 | **Ollama** | Local LLM + embedding models |
-| **LangChain** | Orchestration, retrieval, embedding pipelines |
-| **LangGraph** | Graph-based agent workflow |
 | **Python** | Core logic |
 | **Jupyter Notebook** | Development & experimentation |
+| **Scikit-learn** | Metrics and representation |
 
 ### 📌 Future Enhancements
 
-- Integration with LinkedIn job scraping  
-- Multi-resume batch processing  
+- Integration with LinkedIn job scraping
 - Recruiter dashboard  
 - Fine-tuned domain-specific embedding models  
-- Support for additional file formats  
+- Support for additional file formats (pictures)
 
 ### 🤝 Contributors
 
