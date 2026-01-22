@@ -1,0 +1,1519 @@
+[
+  {
+    "job_id": 1,
+    "job_description": {
+      "job_title": "Marketing Intern",
+      "required_skills": [
+        "Content management systems",
+        "Food52 editorial voice and aesthetic",
+        "Social media (Twitter, Facebook, Pinterest)",
+        "Problem-solving",
+        "Collaboration"
+      ],
+      "required_experience": "Internship",
+      "required_education": "Not specified",
+      "industry": "Media"
+    }
+  },
+  {
+    "job_id": 2,
+    "job_description": {
+      "job_title": "Project Manager",
+      "required_skills": [
+        "Excellent customer service and communication skills",
+        "Outstanding computer knowledge and experience using online software and project management tools"
+      ],
+      "required_experience": "Not specified",
+      "required_education": "Not specified",
+      "industry": "Marketing and Advertising"
+    }
+  },
+  {
+    "job_id": 3,
+    "job_description": {
+      "job_title": "Commissioning Machinery Assistant",
+      "required_skills": [
+        "supervisory skills",
+        "attention to detail"
+      ],
+      "required_experience": "experienced",
+      "required_education": "Not specified",
+      "industry": "Engineering and Construction"
+    }
+  },
+  {
+    "job_id": 4,
+    "job_description": {
+      "job_title": "Account Executive",
+      "required_skills": [
+        "Enterprise sales experience",
+        "Platform solutions to businesses",
+        "Insight selling methodologies",
+        "Strong partnerships and advocacy with customers",
+        "Excellent presentation, white boarding, and negotiation skills"
+      ],
+      "required_experience": "Mid-Senior level",
+      "required_education": "Bachelor's Degree",
+      "industry": "Computer Software"
+    }
+  },
+  {
+    "job_id": 5,
+    "job_description": {
+      "job_title": "Itemization Review Manager",
+      "required_skills": [
+        "Microsoft Office",
+        "ICD9/CPT",
+        "Fee Schedules",
+        "Rules and R&C Guidelines"
+      ],
+      "required_experience": "Mid-Senior level",
+      "required_education": "Bachelor's Degree",
+      "industry": "Hospital & Health Care"
+    }
+  },
+  {
+    "job_id": 6,
+    "job_description": {
+      "job_title": "Accounting Clerk",
+      "required_skills": [
+        "Microsoft Office",
+        "Advanced Excel"
+      ],
+      "required_experience": "2-5 years of relevant work experience",
+      "required_education": "High school diploma",
+      "industry": "Environmental Consulting"
+    }
+  },
+  {
+    "job_id": 7,
+    "job_description": {
+      "job_title": "Content Manager",
+      "required_skills": [
+        "Android ecosystem",
+        "Tech writing",
+        "Community management"
+      ],
+      "required_experience": "Mid-Senior level",
+      "required_education": "Master's Degree",
+      "industry": "Online Media"
+    }
+  },
+  {
+    "job_id": 8,
+    "job_description": {
+      "job_title": "Lead Guest Service Specialist",
+      "required_skills": [
+        "CRM software",
+        "live chat",
+        "phones",
+        "customer service"
+      ],
+      "required_experience": "1 year minimum of customer service",
+      "required_education": "Not specified",
+      "industry": "Technology"
+    }
+  },
+  {
+    "job_id": 9,
+    "job_description": {
+      "job_title": "HP Service Health Reporter SME",
+      "required_skills": [
+        "Leadership",
+        "Written Communication",
+        "Verbal Communication",
+        "ITIL",
+        "IS20K"
+      ],
+      "required_experience": "Associate",
+      "required_education": "Not specified",
+      "industry": "Information Technology and Services"
+    }
+  },
+  {
+    "job_id": 10,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "Keyboarding",
+        "Windows environment PC skills",
+        "Word",
+        "Excel",
+        "PowerPoint"
+      ],
+      "required_experience": "Entry level",
+      "required_education": "High School or equivalent",
+      "industry": "Financial Services"
+    }
+  },
+  {
+    "job_id": 11,
+    "job_description": {
+      "job_title": "ASP.NET Developer",
+      "required_skills": [
+        "SQL",
+        "VB.NET",
+        "Microsoft Office"
+      ],
+      "required_experience": "Mid-Senior level",
+      "required_education": "Bachelor's Degree",
+      "industry": "Information Technology and Services"
+    }
+  },
+  {
+    "job_id": 12,
+    "job_description": {
+      "job_title": "Talent Sourcer",
+      "required_skills": [
+        "Internet sourcing",
+        "Recruitment tools",
+        "Applicant Tracking Systems (ATS)",
+        "Sourcing"
+      ],
+      "required_experience": "Proven track record in sourcing",
+      "required_education": "Not specified",
+      "industry": "Technology"
+    }
+  },
+  {
+    "job_id": 13,
+    "job_description": {
+      "job_title": "Software Developer",
+      "required_skills": [
+        "PHP",
+        "MySQL",
+        "SQL Server",
+        ".NET",
+        "Office 365",
+        "SharePoint administration",
+        "Salesforce administration"
+      ],
+      "required_experience": "4-5 years of experience in developing and deploying web applications",
+      "required_education": "Bachelor's Degree",
+      "industry": "Management Consulting"
+    }
+  },
+  {
+    "job_id": 14,
+    "job_description": {
+      "job_title": "Event Industry Installer",
+      "required_skills": [
+        "Team player",
+        "Organizational skills",
+        "Communication skills"
+      ],
+      "required_experience": "Not specified",
+      "required_education": "Unspecified",
+      "industry": "Events Services"
+    }
+  },
+  {
+    "job_id": 15,
+    "job_description": {
+      "job_title": "Account Executive",
+      "required_skills": [
+        "PPC",
+        "marketing technologies",
+        "#URL_8d92932a488fb7e172d73a0f6813d06d464f1f03705d2825f86b2c7947d60a86#",
+        "Powerpoint",
+        "Google Apps"
+      ],
+      "required_experience": "Associate",
+      "required_education": "Bachelor's Degree",
+      "industry": "Internet"
+    }
+  },
+  {
+    "job_id": 16,
+    "job_description": {
+      "job_title": "Sales Vice President",
+      "required_skills": [
+        "Phone sales",
+        "Field sales",
+        "CRM mastery",
+        "PowerPoint formatting",
+        "Dropbox installation"
+      ],
+      "required_experience": "3-5 years of high-pressure sales experience",
+      "required_education": "Bachelor's Degree",
+      "industry": "Facilities Services"
+    }
+  },
+  {
+    "job_id": 17,
+    "job_description": {
+      "job_title": "Software Quality Assurance Leader",
+      "required_skills": [
+        "Client & Server Testing",
+        "Automation Tools Development",
+        "QA Methodology",
+        "Testing Processes and Documentation Standards"
+      ],
+      "required_experience": "Mid-Senior level",
+      "required_education": "Not specified",
+      "industry": "Internet"
+    }
+  },
+  {
+    "job_id": 18,
+    "job_description": {
+      "job_title": "Customer Service Trainee",
+      "required_skills": [],
+      "required_experience": "Entry-level",
+      "required_education": "Not specified",
+      "industry": "Customer Service"
+    }
+  },
+  {
+    "job_id": 19,
+    "job_description": {
+      "job_title": "Visual Software Designer",
+      "required_skills": [
+        "Web/app interface design",
+        "Branding",
+        "Layout and typography skills"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "Not specified",
+      "industry": "Digital Agency"
+    }
+  },
+  {
+    "job_id": 20,
+    "job_description": {
+      "job_title": "Process Controls Engineer",
+      "required_skills": [
+        "DCS programming",
+        "troubleshooting",
+        "Microsoft Office"
+      ],
+      "required_experience": "5+ years of experience with DCS programming, troubleshooting, and maintaining DCS equipment",
+      "required_education": "Bachelor's degree in Electrical Engineering, Mechanical Engineering, Chemical Engineering, or related field",
+      "industry": "Manufacturing"
+    }
+  },
+  {
+    "job_id": 21,
+    "job_description": {
+      "job_title": "Marketing Assistant",
+      "required_skills": [
+        "interpersonal communication",
+        "organization",
+        "detail-oriented",
+        "computer skills"
+      ],
+      "required_experience": "2+ years of experience",
+      "required_education": "Not specified",
+      "industry": "Digital Marketing"
+    }
+  },
+  {
+    "job_id": 22,
+    "job_description": {
+      "job_title": "Front End Software Engineer",
+      "required_skills": [
+        "Semantic HTML",
+        "CSS",
+        "REST",
+        "JavaScript",
+        "UI frameworks and libraries",
+        "Browser-based wire-framing and prototyping",
+        "Responsive design",
+        "Progressive enhancement",
+        "Performance optimisation techniques",
+        "Style guide documentation"
+      ],
+      "required_experience": "Mid-Senior level",
+      "required_education": "Master's Degree",
+      "industry": "Consumer Electronics"
+    }
+  },
+  {
+    "job_id": 23,
+    "job_description": {
+      "job_title": "Engagement Manager",
+      "required_skills": [
+        "Excellent client-facing and internal communication skills",
+        "Strong quantitative, analytical and computer skills",
+        "Tech-savvy"
+      ],
+      "required_experience": "Mid-Senior level",
+      "required_education": "Bachelor's Degree",
+      "industry": "Telecommunications"
+    }
+  },
+  {
+    "job_id": 24,
+    "job_description": {
+      "job_title": "Sales and Sponsorship Executive",
+      "required_skills": [
+        "Marketing",
+        "Advertising",
+        "Negotiation",
+        "Relationship Building",
+        "Communication"
+      ],
+      "required_experience": "Executive",
+      "required_education": "Not specified",
+      "industry": "Internet"
+    }
+  },
+  {
+    "job_id": 25,
+    "job_description": {
+      "job_title": "Customer Service Administrator",
+      "required_skills": [
+        "verbal communication",
+        "written communication"
+      ],
+      "required_experience": "Previous customer service experience",
+      "required_education": "Not specified",
+      "industry": "E-commerce"
+    }
+  },
+  {
+    "job_id": 26,
+    "job_description": {
+      "job_title": "Software Engineer",
+      "required_skills": [
+        "JAVA",
+        ".NET",
+        "SQL",
+        "ORACLE",
+        "SAP",
+        "Informatica",
+        "Bigdata",
+        "OBIEE"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "Not specified",
+      "industry": "Technology Consulting"
+    }
+  },
+  {
+    "job_id": 27,
+    "job_description": {
+      "job_title": "Content Marketeer",
+      "required_skills": [
+        "storytelling",
+        "blogger outreach",
+        "PR",
+        "Social Media (b2b)",
+        "event communications"
+      ],
+      "required_experience": "Associate",
+      "required_education": "Not specified",
+      "industry": "Online Media"
+    }
+  },
+  {
+    "job_id": 28,
+    "job_description": {
+      "job_title": "Specialist Doctor",
+      "required_skills": [
+        "Endocrinologist",
+        "Gastroenterologist",
+        "Cardiologist",
+        "Neurologist",
+        "Urologist",
+        "Gynecologist (Female)",
+        "Dermatologist (Female)",
+        "Radiologist",
+        "Pediatrician",
+        "Orthopedic surgeon",
+        "Internal Medicine",
+        "General Surgeon",
+        "Neonatologist"
+      ],
+      "required_experience": "Associate",
+      "required_education": "Master's Degree",
+      "industry": "Hospital & Health Care"
+    }
+  },
+  {
+    "job_id": 29,
+    "job_description": {
+      "job_title": "Talent Management Process Manager",
+      "required_skills": [
+        "Data analysis",
+        "Analytics modeling",
+        "Project management",
+        "HR analytics",
+        "Data integrity"
+      ],
+      "required_experience": "5+ to 7 years of experience",
+      "required_education": "Bachelor's Degree",
+      "industry": "Management Consulting"
+    }
+  },
+  {
+    "job_id": 30,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "Keyboarding and windows environment PC skills",
+        "Word, Excel, and PowerPoint"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Consumer Services"
+    }
+  },
+  {
+    "job_id": 31,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "Data entry",
+        "Word processing",
+        "Remittance processing",
+        "Fujitsu and/or Kodak scanners",
+        "OracleCapture, MySup and/or Optika applications",
+        "Microsoft Windows environments",
+        "Email"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Computer Software"
+    }
+  },
+  {
+    "job_id": 32,
+    "job_description": {
+      "job_title": "Software Applications Specialist",
+      "required_skills": [
+        "HTML",
+        "CSS",
+        "JSP",
+        "SQL",
+        "JavaScript",
+        "XML"
+      ],
+      "required_experience": "3+ years",
+      "required_education": "Unspecified",
+      "industry": "Computer Software"
+    }
+  },
+  {
+    "job_id": 33,
+    "job_description": {
+      "job_title": "Craftsman",
+      "required_skills": [
+        "Basic math skills",
+        "Teamwork",
+        "Honesty",
+        "Visual acuity"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "Not specified",
+      "industry": "Construction"
+    }
+  },
+  {
+    "job_id": 34,
+    "job_description": {
+      "job_title": "Completion Engineer",
+      "required_skills": [
+        "Petroleum Engineering",
+        "Wellview",
+        "State operator's license"
+      ],
+      "required_experience": "10 years of related experience or equivalent combination of education and experience",
+      "required_education": "Bachelor's Degree in Petroleum Engineering or a related field",
+      "industry": "Oil & Energy"
+    }
+  },
+  {
+    "job_id": 35,
+    "job_description": {
+      "job_title": "Marketing and Advertising Professional",
+      "required_skills": [],
+      "required_experience": "Entry-level",
+      "required_education": "Not specified",
+      "industry": "Marketing and Advertising"
+    }
+  },
+  {
+    "job_id": 36,
+    "job_description": {
+      "job_title": "English Teacher",
+      "required_skills": [
+        "TEFL",
+        "TESOL",
+        "CELTA"
+      ],
+      "required_experience": ".",
+      "required_education": "Bachelor's Degree",
+      "industry": "Education"
+    }
+  },
+  {
+    "job_id": 37,
+    "job_description": {
+      "job_title": "English Teacher",
+      "required_skills": [
+        "TEFL",
+        "TESOL",
+        "CELTA"
+      ],
+      "required_experience": ".",
+      "required_education": "Bachelor's Degree",
+      "industry": "Education"
+    }
+  },
+  {
+    "job_id": 38,
+    "job_description": {
+      "job_title": "Project Manager",
+      "required_skills": [
+        "Good communicator",
+        "Excellent contractual, negotiation and people management skills"
+      ],
+      "required_experience": "Mid-Senior level",
+      "required_education": "Bachelor's Degree",
+      "industry": "Oil & Energy"
+    }
+  },
+  {
+    "job_id": 39,
+    "job_description": {
+      "job_title": "Art Director",
+      "required_skills": [
+        "Interactive visual design",
+        "Lean UX process",
+        "Agile techniques",
+        "Mobile and touch interfaces",
+        "HTML, Javascript, CSS (for prototyping)",
+        "Interaction Design skills (wireframing, prototyping, research)"
+      ],
+      "required_experience": "Mid-Senior level",
+      "required_education": "Not specified",
+      "industry": "Computer Software"
+    }
+  },
+  {
+    "job_id": 40,
+    "job_description": {
+      "job_title": "Receptionist",
+      "required_skills": [
+        "Microsoft Office",
+        "Outlook",
+        "Email environments"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Financial Services"
+    }
+  },
+  {
+    "job_id": 41,
+    "job_description": {
+      "job_title": "English Teacher",
+      "required_skills": [
+        "TEFL",
+        "TESOL",
+        "CELTA"
+      ],
+      "required_experience": ".",
+      "required_education": "Bachelor's Degree",
+      "industry": "Education"
+    }
+  },
+  {
+    "job_id": 42,
+    "job_description": {
+      "job_title": "English Teacher",
+      "required_skills": [
+        "TEFL",
+        "TESOL",
+        "CELTA"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "Bachelor's Degree",
+      "industry": "Education"
+    }
+  },
+  {
+    "job_id": 43,
+    "job_description": {
+      "job_title": "Software Developer",
+      "required_skills": [
+        "PHP",
+        "XHTML",
+        "CSS",
+        "JavaScript",
+        "LAMP"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "Bachelor's degree in Computer Science",
+      "industry": "Computer Software"
+    }
+  },
+  {
+    "job_id": 44,
+    "job_description": {
+      "job_title": "Customer Service Associate",
+      "required_skills": [
+        "Keyboarding",
+        "Windows environment PC skills",
+        "Word",
+        "Excel",
+        "PowerPoint"
+      ],
+      "required_experience": "Entry level",
+      "required_education": "High School or equivalent",
+      "industry": "Consumer Services"
+    }
+  },
+  {
+    "job_id": 45,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "Microsoft Office",
+        "Email",
+        "Instant Messaging",
+        "Inventory software"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Computer Software"
+    }
+  },
+  {
+    "job_id": 46,
+    "job_description": {
+      "job_title": "Sales Representative",
+      "required_skills": [
+        "customer service",
+        "product knowledge",
+        "retail merchandising",
+        "verbal and written communication",
+        "interpersonal skills",
+        "time management",
+        "prioritization"
+      ],
+      "required_experience": "1-2 years",
+      "required_education": "Not specified",
+      "industry": "Building Materials"
+    }
+  },
+  {
+    "job_id": 47,
+    "job_description": {
+      "job_title": "Entry Level Corporate Banking",
+      "required_skills": [
+        "Excellent Computer Skills"
+      ],
+      "required_experience": "0-1 years experience",
+      "required_education": "Bachelor's Degree",
+      "industry": "Banking"
+    }
+  },
+  {
+    "job_id": 48,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "Communication skills",
+        "Computer proficiency in email environments, MS Word/Excel or similar programs",
+        "Organizational and administrative skills",
+        "Ability to handle multiple projects simultaneously"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Financial Services"
+    }
+  },
+  {
+    "job_id": 49,
+    "job_description": {
+      "job_title": "English Teacher",
+      "required_skills": [
+        "TEFL",
+        "TESOL",
+        "CELTA"
+      ],
+      "required_experience": ".",
+      "required_education": "Bachelor's Degree",
+      "industry": "Education"
+    }
+  },
+  {
+    "job_id": 50,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "Data entry",
+        "Communication",
+        "Organizational skills",
+        "Computer proficiency (MS Word/Excel)",
+        "Time management"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Facilities Services"
+    }
+  },
+  {
+    "job_id": 51,
+    "job_description": {
+      "job_title": "Food Production Manager",
+      "required_skills": [
+        "MS Excel",
+        "English",
+        "Spanish"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Food & Beverages"
+    }
+  },
+  {
+    "job_id": 52,
+    "job_description": {
+      "job_title": "Administrative Assistant",
+      "required_skills": [
+        "Microsoft Office",
+        "PCs and Windows"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Education Management"
+    }
+  },
+  {
+    "job_id": 53,
+    "job_description": {
+      "job_title": "Payroll Tax Specialist",
+      "required_skills": [
+        "Master Tax Software",
+        "MS Excel"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "Not specified",
+      "industry": "Information Technology and Services"
+    }
+  },
+  {
+    "job_id": 54,
+    "job_description": {
+      "job_title": "Technical Project Manager",
+      "required_skills": [
+        "Business Analysis",
+        "Requirements Gathering",
+        "Functional Specifications",
+        "Testing",
+        "Agile Development",
+        "Atlassian Suite",
+        "Zen Desk"
+      ],
+      "required_experience": "3-5 years of experience in project management, business analysis, and testing",
+      "required_education": "Bachelor's Degree",
+      "industry": "Financial Services"
+    }
+  },
+  {
+    "job_id": 55,
+    "job_description": {
+      "job_title": "Outside Sales Representative",
+      "required_skills": [
+        "Excellent sales talents",
+        "Empathy for customers and their needs",
+        "Verbal and written communication skills",
+        "Interpersonal and public speaking skills",
+        "Time-management and planning skills",
+        "Attention to detail and organizational skills"
+      ],
+      "required_experience": "No minimum experience required",
+      "required_education": "High school diploma or equivalent; college degree preferred",
+      "industry": "Construction Materials"
+    }
+  },
+  {
+    "job_id": 56,
+    "job_description": {
+      "job_title": "Junior HR Marketing Manager",
+      "required_skills": [
+        "Ruby On Rails",
+        "Employer Branding",
+        "Communication Techniques",
+        "Marketing",
+        "Event Organization"
+      ],
+      "required_experience": "Some experience in HR and/or marketing/event organization",
+      "required_education": "Not specified",
+      "industry": "IT"
+    }
+  },
+  {
+    "job_id": 57,
+    "job_description": {
+      "job_title": "Outside Sales Representative",
+      "required_skills": [
+        "Excellent sales talents",
+        "Empathy for customers and their needs",
+        "Verbal and written communication skills",
+        "Interpersonal and public speaking skills",
+        "Time-management and planning skills",
+        "Attention to detail and organizational skills"
+      ],
+      "required_experience": "No minimum experience required",
+      "required_education": "High school diploma or equivalent; college degree preferred",
+      "industry": "Construction"
+    }
+  },
+  {
+    "job_id": 58,
+    "job_description": {
+      "job_title": "Case Management Worker",
+      "required_skills": [
+        "Strong organizational and coordination skills",
+        "Sound clinical recordkeeping and record management",
+        "Crisis management and intervention with clients",
+        "Good oral and written communication skills",
+        "Ability to assess/manage crisis situations",
+        "Strong interpersonal skills",
+        "Knowledge of health determinants and their impact on clients",
+        "Awareness of HIV/AIDS, HCV, harm reduction and related issues"
+      ],
+      "required_experience": "Three to five years' experience in the mental health or addictions field",
+      "required_education": "Bachelor's Degree",
+      "industry": "Hospital & Health Care"
+    }
+  },
+  {
+    "job_id": 59,
+    "job_description": {
+      "job_title": "Marketing Specialist",
+      "required_skills": [
+        "Technology marketing",
+        "Healthcare marketing",
+        "SaaS experience",
+        "Google Adwords",
+        "Unbounce"
+      ],
+      "required_experience": "Associate (3-5 years)",
+      "required_education": "Bachelor's Degree",
+      "industry": "Computer Software"
+    }
+  },
+  {
+    "job_id": 60,
+    "job_description": {
+      "job_title": "Visual Designer",
+      "required_skills": [
+        "Excellent interpersonal and communication skills",
+        "Great visual design understanding for proportion, balance, use of color, and visual flow",
+        "Expertise with visual design tools for creating icons, gradients, toolbars, site graphics, etc.",
+        "Skill with diagramming tools (e.g., Visio, OmniGraffle) to create diagrams for presentations and marketing materials"
+      ],
+      "required_experience": "4+ years of experience",
+      "required_education": "Unspecified",
+      "industry": "Information Technology and Services"
+    }
+  },
+  {
+    "job_id": 61,
+    "job_description": {
+      "job_title": "English Teacher",
+      "required_skills": [
+        "TEFL",
+        "TESOL",
+        "CELTA"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "Bachelor's Degree",
+      "industry": "Education"
+    }
+  },
+  {
+    "job_id": 62,
+    "job_description": {
+      "job_title": "Bulk Ingredient Unloader",
+      "required_skills": [
+        "Microsoft Office",
+        "Process control computer programs"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Food Production"
+    }
+  },
+  {
+    "job_id": 63,
+    "job_description": {
+      "job_title": "English Teacher",
+      "required_skills": [
+        "TEFL",
+        "TESOL",
+        "CELTA"
+      ],
+      "required_experience": ".",
+      "required_education": "Bachelor's Degree",
+      "industry": "Education"
+    }
+  },
+  {
+    "job_id": 64,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "Keyboarding skills",
+        "Effective communication (verbal and written)",
+        "Organizational and administrative skills",
+        "Ability to work individually or in a team environment",
+        "Basic mathematical knowledge"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Hospital & Health Care"
+    }
+  },
+  {
+    "job_id": 65,
+    "job_description": {
+      "job_title": "Finance Software Engineer",
+      "required_skills": [
+        "Microsoft C++",
+        "Microsoft Visual Basic",
+        "Adobe Flex",
+        "Action Script",
+        "Metaquotes MQL",
+        "Ninjatrader NinjaScript",
+        "Tradestation Easylanguage"
+      ],
+      "required_experience": "5+ years of experience",
+      "required_education": "Bachelor's degree in Mathematics, statistics, computer software engineering or computer science",
+      "industry": "Finance"
+    }
+  },
+  {
+    "job_id": 66,
+    "job_description": {
+      "job_title": "Digital Software Engineer",
+      "required_skills": [
+        "HTML5/CSS3",
+        "JavaScript",
+        "jQuery",
+        "Photoshop/Illustrator",
+        "PHP",
+        "MySQL",
+        "Third-party APIs (Facebook Open Graph)",
+        "Responsive web design",
+        "Greensock JS animation library"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "Not specified",
+      "industry": "Computer Software"
+    }
+  },
+  {
+    "job_id": 67,
+    "job_description": {
+      "job_title": "AS3 Software Engineer",
+      "required_skills": [
+        "ActionScript 3",
+        "Flash",
+        "scripting",
+        "video streams",
+        "user interfaces"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "Not specified",
+      "industry": "Software Development"
+    }
+  },
+  {
+    "job_id": 68,
+    "job_description": {
+      "job_title": "Production Supervisor",
+      "required_skills": [
+        "Lean Manufacturing",
+        "GMP",
+        "AIB",
+        "FDA"
+      ],
+      "required_experience": "3+ years of experience in a food manufacturing or consumer packaged goods industry",
+      "required_education": "4-year degree required; Business, Food Science, Engineering or related disciplines",
+      "industry": "Food and Beverage"
+    }
+  },
+  {
+    "job_id": 69,
+    "job_description": {
+      "job_title": "New Product Development Project Leader",
+      "required_skills": [
+        "Project management",
+        "Product design",
+        "Process engineering",
+        "Manufacturing engineering"
+      ],
+      "required_experience": "8+ years of experience in project management, product design, process engineering or manufacturing engineering",
+      "required_education": "Bachelor's degree in Engineering (or other applicable four-year degree)",
+      "industry": "Manufacturing"
+    }
+  },
+  {
+    "job_id": 70,
+    "job_description": {
+      "job_title": "Ruby Software Engineer",
+      "required_skills": [
+        "Automation experience with Ruby",
+        "Object oriented techniques",
+        "Multi-tier, client-side and server-side development patterns",
+        "REST and/or SOAP APIs",
+        "Cross-browser and cross-platform issues (Internet Explorer, Firefox, Safari, Chrome)",
+        "Agile Scrum environment",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "AJAX",
+        "jQuery"
+      ],
+      "required_experience": "4-5 years of experience",
+      "required_education": "4 year degree in computer science, engineering, graphic design, or related discipline.",
+      "industry": "Information Technology"
+    }
+  },
+  {
+    "job_id": 71,
+    "job_description": {
+      "job_title": "Tasting Events Presenter",
+      "required_skills": [
+        "Social Media",
+        "Public Speaking",
+        "Teamwork",
+        "Leadership"
+      ],
+      "required_experience": "Minimum 20 hours per week",
+      "required_education": "Not specified",
+      "industry": "Food and Beverage"
+    }
+  },
+  {
+    "job_id": 72,
+    "job_description": {
+      "job_title": "Branch Service Associate",
+      "required_skills": [
+        "Excellent member service",
+        "Communication skills",
+        "Cross-selling products and services"
+      ],
+      "required_experience": "1 year experience working in a sales culture credit union or banking environment",
+      "required_education": "High School or equivalent",
+      "industry": "Banking"
+    }
+  },
+  {
+    "job_id": 73,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "Keyboarding",
+        "Windows environment PC skills",
+        "Word",
+        "Excel",
+        "PowerPoint"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Financial Services"
+    }
+  },
+  {
+    "job_id": 74,
+    "job_description": {
+      "job_title": "Obstetrician Gynecologist",
+      "required_skills": [],
+      "required_experience": "No experience specified",
+      "required_education": "Not specified",
+      "industry": "Health"
+    }
+  },
+  {
+    "job_id": 75,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "Data entry",
+        "Computer skills",
+        "Excellent customer care skills",
+        "Verbal communication",
+        "Written communication"
+      ],
+      "required_experience": "Entry level",
+      "required_education": "High School or equivalent",
+      "industry": "Insurance"
+    }
+  },
+  {
+    "job_id": 76,
+    "job_description": {
+      "job_title": "Full-Stack Software Engineer",
+      "required_skills": [
+        "Ruby on Rails",
+        "JavaScript",
+        "SQL",
+        "HTML",
+        "CSS",
+        "TDD",
+        "Unit/Functional Automated Testing",
+        "CI",
+        "CD",
+        "Software Design and Architecture"
+      ],
+      "required_experience": "Mid-Senior level",
+      "required_education": "Master's Degree",
+      "industry": "E-Learning"
+    }
+  },
+  {
+    "job_id": 77,
+    "job_description": {
+      "job_title": "Medical Coder",
+      "required_skills": [
+        "AAPC certification",
+        "E/M coding/down-coding experience",
+        "EncoderPro software experience",
+        "Microsoft Office Suite"
+      ],
+      "required_experience": "Associate",
+      "required_education": "High School or equivalent",
+      "industry": "Hospital & Health Care"
+    }
+  },
+  {
+    "job_id": 78,
+    "job_description": {
+      "job_title": "Software Developer",
+      "required_skills": [
+        "C#",
+        "SQL",
+        "MVC",
+        "NHibernate",
+        "Mobile development (MonoTouch/Xamarin, objective-c, Java)",
+        "Agile Development process"
+      ],
+      "required_experience": "Mid-Senior level",
+      "required_education": "Bachelor's Degree",
+      "industry": "Computer Software"
+    }
+  },
+  {
+    "job_id": 79,
+    "job_description": {
+      "job_title": "Business Development Manager",
+      "required_skills": [
+        "Merchant Cash Advance",
+        "Small Business Funding",
+        "Recruitment",
+        "Sales Team Management",
+        "Scripting and Materials"
+      ],
+      "required_experience": "Mid-Senior level",
+      "required_education": "Not specified",
+      "industry": "Banking"
+    }
+  },
+  {
+    "job_id": 80,
+    "job_description": {
+      "job_title": "Product Manager",
+      "required_skills": [
+        "English writing skills",
+        "Public speaking",
+        "People management",
+        "Constraint management",
+        "Analytical skills"
+      ],
+      "required_experience": "3+ years of experience in project or product management",
+      "required_education": "Bachelor's Degree",
+      "industry": "Information Technology and Services"
+    }
+  },
+  {
+    "job_id": 81,
+    "job_description": {
+      "job_title": "English Teacher",
+      "required_skills": [
+        "TEFL",
+        "TESOL",
+        "CELTA"
+      ],
+      "required_experience": ".",
+      "required_education": "Bachelor's Degree",
+      "industry": "Education"
+    }
+  },
+  {
+    "job_id": 82,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "MS Office",
+        "Microsoft Word",
+        "Microsoft Excel"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Financial Services"
+    }
+  },
+  {
+    "job_id": 83,
+    "job_description": {
+      "job_title": "Sales Representative",
+      "required_skills": [
+        "Communication skills",
+        "Positive attitude",
+        "Target achievement",
+        "Customer service",
+        "Relationship building"
+      ],
+      "required_experience": "Associate level experience in fragrance and sales",
+      "required_education": "Unspecified",
+      "industry": "Cosmetics"
+    }
+  },
+  {
+    "job_id": 84,
+    "job_description": {
+      "job_title": "General Clerk",
+      "required_skills": [
+        "Keyboarding skills",
+        "Microsoft Windows environments",
+        "Email"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Consumer Services"
+    }
+  },
+  {
+    "job_id": 85,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "Microsoft Office",
+        "Keyboarding",
+        "Windows environment PC skills"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Facilities Services"
+    }
+  },
+  {
+    "job_id": 86,
+    "job_description": {
+      "job_title": "Research Analyst",
+      "required_skills": [
+        "Meticulous attention to detail",
+        "Financial modeling and valuation skills",
+        "Exceptional research and communication (written and verbal)",
+        "High level of organization",
+        "Creativity and resourcefulness",
+        "Strong analytical skills",
+        "Background in finance"
+      ],
+      "required_experience": "1-4 years of experience",
+      "required_education": "Bachelor's Degree",
+      "industry": "Financial Services"
+    }
+  },
+  {
+    "job_id": 87,
+    "job_description": {
+      "job_title": "Customer Service Team Lead",
+      "required_skills": [
+        "MS Word",
+        "MS Excel",
+        "Email environments"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Hospital & Health Care"
+    }
+  },
+  {
+    "job_id": 88,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "Keyboarding",
+        "Windows environment PC skills",
+        "Financial acumen",
+        "Communication skills",
+        "Teamwork",
+        "Independence",
+        "Creativity",
+        "Time management"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Insurance"
+    }
+  },
+  {
+    "job_id": 89,
+    "job_description": {
+      "job_title": "Sales and Partnerships Intern",
+      "required_skills": [
+        "Strong, persuasive and accurate communication skills",
+        "Professional, energetic, positive attitude",
+        "Self-motivated, resourceful, and persistent with careful attention to detail"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "Not specified",
+      "industry": "Travel"
+    }
+  },
+  {
+    "job_id": 90,
+    "job_description": {
+      "job_title": "English Teacher",
+      "required_skills": [
+        "TEFL",
+        "TESOL",
+        "CELTA"
+      ],
+      "required_experience": ".",
+      "required_education": "Bachelor's Degree",
+      "industry": "Education"
+    }
+  },
+  {
+    "job_id": 91,
+    "job_description": {
+      "job_title": "Marketing Manager",
+      "required_skills": [
+        "Google AdWords",
+        "Analytics",
+        "Social Media Campaigns"
+      ],
+      "required_experience": "3+ years of experience in marketing",
+      "required_education": "Bachelor's degree with a focus in Marketing preferred",
+      "industry": "Marketing and Advertising"
+    }
+  },
+  {
+    "job_id": 92,
+    "job_description": {
+      "job_title": "Recruitment Consultant",
+      "required_skills": [],
+      "required_experience": "Entry-level",
+      "required_education": "Not specified",
+      "industry": "Staffing and Recruiting"
+    }
+  },
+  {
+    "job_id": 93,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "Superior customer service",
+        "Technical skills",
+        "Problem solving competency"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Consumer Services"
+    }
+  },
+  {
+    "job_id": 94,
+    "job_description": {
+      "job_title": "Administrative Assistant",
+      "required_skills": [
+        "Keyboarding and windows environment PC skills",
+        "Word, Excel and PowerPoint",
+        "Excellent communication skills (verbal and written)",
+        "Customer service related experience"
+      ],
+      "required_experience": "Entry level",
+      "required_education": "High School or equivalent",
+      "industry": "Financial Services"
+    }
+  },
+  {
+    "job_id": 95,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "computer literacy",
+        "excellent communication skills"
+      ],
+      "required_experience": "Not applicable",
+      "required_education": "High School or equivalent",
+      "industry": "Administrative"
+    }
+  },
+  {
+    "job_id": 96,
+    "job_description": {
+      "job_title": "Marketing Manager",
+      "required_skills": [
+        "Marketing Automation",
+        "Indesign",
+        "Photoshop",
+        "Salesforce",
+        "Content Marketing",
+        "Website Management",
+        "SEO",
+        "PPC"
+      ],
+      "required_experience": "3-5 years managing a small marketing team",
+      "required_education": "Master's Degree",
+      "industry": "Internet"
+    }
+  },
+  {
+    "job_id": 97,
+    "job_description": {
+      "job_title": "Software Test Engineer",
+      "required_skills": [
+        "Cucumber",
+        "LAMP",
+        "Automation",
+        "Jenkins",
+        "Web Testing",
+        "Selenium Webdriver (Java or C#)",
+        "BDD with Behat or Cucumber"
+      ],
+      "required_experience": "Mid-Senior level",
+      "required_education": "Bachelor's Degree",
+      "industry": "Financial Services"
+    }
+  },
+  {
+    "job_id": 98,
+    "job_description": {
+      "job_title": "Customer Service Representative",
+      "required_skills": [
+        "Keyboarding",
+        "Windows environment PC skills",
+        "Word",
+        "Excel",
+        "PowerPoint"
+      ],
+      "required_experience": "Entry-level",
+      "required_education": "High School or equivalent",
+      "industry": "Consumer Services"
+    }
+  },
+  {
+    "job_id": 100,
+    "job_description": {
+      "job_title": "English Teacher",
+      "required_skills": [
+        "TEFL",
+        "TESOL",
+        "CELTA"
+      ],
+      "required_experience": ".",
+      "required_education": "Bachelor's Degree",
+      "industry": "Education"
+    }
+  }
+]

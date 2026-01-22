@@ -3,6 +3,12 @@ from pathlib import Path
 import tempfile
 import sys
 import json
+import time
+import pandas as pd
+
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 sys.path.append(str(Path("..").resolve()))
 
@@ -40,11 +46,6 @@ sim_function = st.radio(
     index=0
 )
 
-uploaded_file = st.file_uploader(
-                    "Upload File (PDF/DOCX/TXT)"
-                    , type=["pdf", "docx", "txt"]
-                    )
-
 top_k = st.slider(
                 "Top K Matches", 
                 min_value=1, 
@@ -52,13 +53,23 @@ top_k = st.slider(
                 value=5
                 )
 
-if st.button("Run Matching"):
+uploaded_file = st.file_uploader(
+                    "Upload File (PDF/DOCX/TXT)"
+                    , type=["pdf", "docx", "txt"]
+                    )
 
+if "pipeline_completed" not in st.session_state:
     if not uploaded_file:
         st.warning("Please upload at least one resume or one job description.")
         st.stop()
 
+    timings = {}
+    overall_start = time.time()
+
     # ---- LOAD CHECKPOINT EMBEDDINGS ----
+    t0 = time.time()
+    st.write("Loading embeddings...")
+    
     if embedding_selection == "BGE embedding":
         resume_emb_path = Path("../notebooks/checkpoints/resume_embeddings_bge.json")
         job_emb_path = Path("../notebooks/checkpoints/jobs_embeddings_bge.json")
@@ -68,21 +79,26 @@ if st.button("Run Matching"):
 
     with open(resume_emb_path, "r") as f:
         emb_resume = json.load(f)
-
     with open(job_emb_path, "r") as f:
         emb_job = json.load(f)
     
     emb_resume_dict, emb_job_dic = lists_to_id_vector_dicts(emb_resume, emb_job)
+    
+    timings["Load embeddings"] = time.time() - t0
 
     # ---- LOAD NORMALIZED TEXT FOR LLM EXPLANATION ----
+    t0 = time.time()
+    st.write("Loading files...")
     with open(Path("../notebooks/checkpoints/normalized_resumes.json"), "r") as f:
         normalized_resumes = json.load(f)
 
     with open(Path("../notebooks/checkpoints/normalized_jobs.json"), "r") as f:
         normalized_jobs = json.load(f)
+
+    timings["Load normalized text"] = time.time() - t0
     
-    st.write("Processing documents...")
     # --- Step 1: Save uploaded file temporarily ---
+    st.write("Saving uploaded file temporarely")
     suffix = Path(uploaded_file.name).suffix.lower()
     if suffix in [".pdf", ".docx", ".txt"]:
         with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
@@ -93,29 +109,41 @@ if st.button("Run Matching"):
         st.stop()
 
     # --- Step 2: Ingestion to raw text + Normalization --- but file_path -> (PDF/DOCX/TXT)
+    t0 = time.time()
+    st.write("Processing document (ingestion + normalization)...")
+    
     if match_mode == "Upload Resume → Match Jobs":
         raw_text = any_resume_to_raw_text(file_path)[0]
         norm_text = normalize_resume(raw_text)
-        # Fixing potential normalization errors
-        norm_text = fix_error_experience( fix_error_education(norm_text))
-        # --- Step 3: Embedding ---
-        st.write("Generating embeddings...")
+        norm_text = fix_error_experience(fix_error_education(norm_text))
+    else:
+        raw_text = any_job_to_raw_text(file_path)[0]
+        norm_text = normalize_job(raw_text) 
+
+    timings["Ingestion + normalization"] = time.time() - t0
+    
+    # --- Step 3: Embedding ---
+    t0 = time.time()
+    st.write("Generating embeddings...")
+    
+    if match_mode == "Upload Resume → Match Jobs":
         if embedding_selection == "BGE embedding":
             vec = embed_resume_BGE(norm_text)
         else:
             vec = embed_resume_nomic(norm_text)
     else:
-        raw_text = any_job_to_raw_text(file_path)[0]
-        norm_text = normalize_job(raw_text)
-        # --- Step 3: Embedding ---
-        st.write("Generating embeddings...")
         if embedding_selection == "BGE embedding":
             vec = embed_job_BGE(norm_text)
         else:
             vec = embed_job_nomic(norm_text)
+
+    timings["Embedding generation"] = time.time() - t0
     
     # --- Step 4: Matching (Similarity and ranking) ---
+    t0 = time.time()
     st.subheader("Match Results")
+    st.write("Matching + LLM explanation")
+    
     if sim_function == "Cosine similarity":
         similarity_func = cosine_similarity
     else:
@@ -185,3 +213,84 @@ if st.button("Run Matching"):
             )
             with st.expander("LLM Explanation"):
                 st.write(explanation)
+
+    timings["Matching + LLM explanation"] = time.time() - t0
+    
+    # --- Final Time Summary ---
+    total = time.time() - overall_start
+    timings["TOTAL"] = total
+    
+    # Adding session elements
+    st.session_state["uploaded_vec"] = vec
+    st.session_state["stored_matches"] = matches
+    st.session_state["similarity_func"] = similarity_func
+    st.session_state["match_mode"] = match_mode
+    st.session_state["emb_job_dic"] = emb_job_dic
+    st.session_state["emb_resume_dict"] = emb_resume_dict
+    st.session_state["timings"] = timings
+    
+    st.session_state["pipeline_completed"] = True
+
+if st.session_state.get("pipeline_completed", False):
+    st.subheader("Pipeline Timing Summary")
+    df = pd.DataFrame([
+        {"Step": step, "Time (s)": round(t, 3)}
+        for step, t in st.session_state["timings"].items()
+    ])
+
+    st.dataframe(df)
+    
+    
+# === SIMILARITY DISTRIBUTION BUTTON ===
+if st.session_state.get("pipeline_completed", False):
+    if st.button("Compute Similarity Distribution"):
+        st.subheader("Similarity Score Distribution Analysis")
+
+        uploaded_vec = st.session_state["uploaded_vec"]
+        stored_matches = st.session_state["stored_matches"]
+        similarity_func = st.session_state["similarity_func"]
+        match_mode = st.session_state["match_mode"]
+        emb_job_dic = st.session_state["emb_job_dic"]
+        emb_resume_dict = st.session_state["emb_resume_dict"]
+
+        similarity_scores = []
+
+        if match_mode == "Upload Resume → Match Jobs":
+            for job_id, job_vec in emb_job_dic.items():
+                similarity_scores.append(similarity_func(uploaded_vec, job_vec))
+        else:
+            for resume_id, resume_vec in emb_resume_dict.items():
+                similarity_scores.append(similarity_func(uploaded_vec, resume_vec))
+
+        signal_scores = [m["score"] for m in stored_matches]
+
+        fig, ax = plt.subplots(figsize=(8, 4))
+        sns.histplot(similarity_scores, kde=True, stat="density", linewidth=0, label="All Scores", ax=ax)
+        sns.histplot(signal_scores, kde=True, stat="density", linewidth=0, color="orange", label="Top-K Matches", ax=ax)
+
+        ax.set_title("Similarity Score Distribution")
+        ax.set_xlabel("Similarity")
+        ax.set_ylabel("Density")
+        ax.legend()
+
+        st.pyplot(fig)
+
+        st.write("Summary Statistics")
+        df_stats = pd.DataFrame({
+            "Metric": ["Mean", "Median", "Std", "Min", "Max"],
+            "All scores": [
+                np.mean(similarity_scores),
+                np.median(similarity_scores),
+                np.std(similarity_scores),
+                np.min(similarity_scores),
+                np.max(similarity_scores),
+            ],
+            "Top-K scores": [
+                np.mean(signal_scores),
+                np.median(signal_scores),
+                np.std(signal_scores),
+                np.min(signal_scores),
+                np.max(signal_scores),
+            ]
+        })
+        st.dataframe(df_stats)

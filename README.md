@@ -98,7 +98,7 @@ cd Smart_Resume_to_Job_Matcher
 
 # Create a python environment with correct dependencies (optional)
 python -m venv .venv		
-source .venv/bin/activate   # or Windows equivalent
+source .venv/bin/activate   # or Windows equivalent (source .venv/Scripts/activate)
 ```
 
 #### **1. Install Dependencies**
