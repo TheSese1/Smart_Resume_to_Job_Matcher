@@ -56,8 +56,8 @@ Resume & Job Embeddings → Matching → Ranking + Explanation
 ```
 project/
 │
-├── app/# not created yet
-│ └── streamlit_app.py
+├── app/
+│ └── streamlit_app.py                 # functional streamlit app (see video demonstation)
 │
 ├── agents/
 │ ├── normalization_agent.py           # agentic functions to create normalized prompts
@@ -76,7 +76,9 @@ project/
 |
 ├── notebooks/                         # experiments
 │ ├── smart_resume_matcher.ipynb       # Main notebook for transformation
-│ └── eval.ipynb                       # evaluation notebook
+│ ├── checkpoint_test/                 # Checkpoint with the normalized files and embeddings for testing
+│ ├── eval.ipynb                       # evaluation notebook
+│ └── images/                          # Graphical representation used in the evaluation notebook
 │
 ├── data/
 │ ├── resumes/
@@ -86,7 +88,9 @@ project/
 │ └── test/                            # resume and job posting examples (txt, docx, csv)
 │
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+├── Smart-Resume-Job-Matcher.pptx      # Presentation, with the link to the demo video
+└── Report.docx                        # Report
 ```
 
 ### ▶️ How to Run
